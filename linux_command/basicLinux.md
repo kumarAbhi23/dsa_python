@@ -1,7 +1,10 @@
-# Linux command for data engineering 
+ # Linux command for data engineering 
 
     clear : to clear every things from terminal 
     tab btn : for auto complete 
+    touch filename : to create a folder/file...
+
+    whoami : get infromation user who logged in 
 
  
   ### 1. Nevigation command 
@@ -107,6 +110,63 @@
       chmod 777 text.exe  - all permission 
       chmod 666  ....    -read and write 
       chmod 766 ....    -all for owner,r and w for group and others
+
+
+   ## File operation 
+       move : to move file ...cut file
+       remove: to delete file 
+       copy   : normal copy 
+
+       Move file : mv fileName finalLocation
+       kumar_abhishekpal23@cluster-ff00-m:~/test_dir$ mv localFile d2
+
+       remnaming 
+       mv test.exe renamed_test.exe
+
+       delete file /directory 
+        rm test2.exe
+        rm -r directoryName
+        rm -f filename: force delete 
+
+        Copy 
+        cp souce destination 
+        cp file.text d2   but meta data not preseved : time and other 
+        cp  -p file.txt d : here meta data preseved 
+
+
+
+## file edit operations 
+     vi fileNmae   : enter inside file 
+     i : to enter insert mode 
+
+     
+     esc - to exit from insert mode
+     :w -save
+     :q -quit
+     :wq -save and quit
+     :q! quit without saving
+
+     
+
+      head fileNme :retun 10 lines 
+     head -n 5 fileNme : return first 5 lines 
+     tail fileName: retunr 
+
+     cat filetxt : show all file content 
+## Search and Pattern Matching 
+    
+    grep 1 file.text : we are searching 1 in file.text
+
+
+    https://allthingdata.substack.com/p/essential-linux-commands-for-data
+
+
+    list data by name 
+    ls -ltr *Fi*: * is any thing we can use either side alos 
+      
+
+
+
       
 
 
